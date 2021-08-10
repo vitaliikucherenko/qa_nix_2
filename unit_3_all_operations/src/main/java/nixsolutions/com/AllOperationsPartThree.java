@@ -2,7 +2,9 @@ package nixsolutions.com;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 public class AllOperationsPartThree {
+
     public void run() {
         int number = 0;
         int h, m;
