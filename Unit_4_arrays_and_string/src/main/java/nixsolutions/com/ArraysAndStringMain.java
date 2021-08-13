@@ -1,9 +1,9 @@
-package www.nixsolutions.com;
+package nixsolutions.com;
 
 import static java.lang.Integer.parseInt;
-import static www.nixsolutions.com.GetString.getNumberFromConsole;
-import static www.nixsolutions.com.GetString.getStringFromConsole;
-import static www.nixsolutions.com.Selection.selectionAndResult;
+import static nixsolutions.com.GetString.getNumberFromConsole;
+import static nixsolutions.com.GetString.getStringFromConsole;
+import static nixsolutions.com.Selection.selectionAndResult;
 
 public class ArraysAndStringMain {
 

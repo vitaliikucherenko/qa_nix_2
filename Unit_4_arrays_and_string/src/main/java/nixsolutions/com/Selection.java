@@ -1,9 +1,9 @@
-package www.nixsolutions.com;
+package nixsolutions.com;
 
 import static java.lang.Integer.parseInt;
-import static www.nixsolutions.com.GetString.getIndexFromConsole;
-import static www.nixsolutions.com.GetString.getStringFromConsole;
-import static www.nixsolutions.com.StringReverse.*;
+import static nixsolutions.com.GetString.getIndexFromConsole;
+import static nixsolutions.com.GetString.getStringFromConsole;
+import static nixsolutions.com.StringReverse.*;
 
 public class Selection {
 

@@ -1,2 +1,2 @@
 call mvn clean install
-call java -jar .\target\ArrayAndStringMain.jar
+call java -jar .\target\array_and_string.jar

@@ -1,4 +1,4 @@
-package www.nixsolutions.com;
+package nixsolutions.com;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
