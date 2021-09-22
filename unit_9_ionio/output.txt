@@ -1,0 +1,23 @@
+input.txt file contains:
+tet test1 test2 test3. test1! test2? test1: test1; tet test2...oppo ala, tet test test test.qwerty, stop text.amma ala.
+
+Number of unique words:
+test1= 4
+tet= 3
+test2= 3
+test= 3
+ala= 2
+test3= 1
+oppo= 1
+stop= 1
+qwerty= 1
+text= 1
+amma= 1
+
+Palindrome words and their number:
+tet= 3
+ala= 2
+oppo= 1
+amma= 1
+
+Number of sentences = 9
