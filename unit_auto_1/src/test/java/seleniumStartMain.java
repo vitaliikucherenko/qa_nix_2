@@ -73,7 +73,7 @@ public class seleniumStartMain {
         //Thread.sleep(2000);
         WebElement closeLogin = driver.findElement(By.xpath("/html/body/app-root/single-modal-window/div[2]/div[1]/button"));
         closeLogin.click();
-
+//changed language
         WebElement text = driver.findElement(By.xpath("//*[text()=' RU ']"));
         text.click();
         driver.close();
