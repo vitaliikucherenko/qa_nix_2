@@ -146,7 +146,6 @@ public class SeleniumStartMain {
         Assertions.assertEquals("Корзина пуста", message.getText());
     }
 
-
     @AfterAll
     public static void closeDriver() {
         driver.close();
