@@ -2,7 +2,11 @@ package configBaseTest;
 
 import app.Browser;
 import com.codeborne.selenide.testng.ScreenShooter;
+import metodsViewResult.TakeScreenshot;
 import org.testng.annotations.*;
+
+import java.io.IOException;
+
 import static com.codeborne.selenide.Selenide.*;
 
 public class BaseTest {
@@ -16,6 +20,12 @@ public class BaseTest {
 
     @AfterMethod(groups = "authentication")
     public void end() {
+        TakeScreenshot takeScreenshot= new TakeScreenshot();
+        try {
+            takeScreenshot.takeScreen();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         ScreenShooter.captureSuccessfulTests = false;
         closeWebDriver();
         System.out.println("AfterMethod - Screenshot of the test is taken");
