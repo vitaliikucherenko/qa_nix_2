@@ -1,13 +1,13 @@
 package app;
 
-public enum DaoType {
+public enum BrowserTypes {
 
     chrome("chrome"),
     edge("edge");
 
     private final String type;
 
-    DaoType(String type) {
+    BrowserTypes(String type) {
         this.type = type;
     }
 
@@ -15,7 +15,7 @@ public enum DaoType {
         return type;
     }
 
-    public static DaoType init(String type) {
+    public static BrowserTypes init(String type) {
         switch (type) {
             case "chrome" : return chrome;
             case "edge" : return edge;

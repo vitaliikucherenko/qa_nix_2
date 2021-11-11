@@ -8,8 +8,6 @@ import org.testng.asserts.SoftAssert;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LogInPopUp {
-    //SoftAssert assertTest = new SoftAssert();
-
     public void LogIn(String login, String password) {
         SoftAssert assertTest = new SoftAssert();
         SelenideElement lohInButton = $(By.xpath("//*[@class='header__button ng-star-inserted']")).should(Condition.enabled);
@@ -18,8 +16,8 @@ public class LogInPopUp {
         loginField.sendKeys(login);
         SelenideElement passwordField = $(By.id("auth_pass")).should(Condition.empty);
         passwordField.sendKeys(password);
-        assertTest.assertEquals(loginField.getAttribute("value"),login);
-        assertTest.assertEquals(passwordField.getAttribute("value"),password);
+        assertTest.assertEquals(loginField.getAttribute("value"), login);
+        assertTest.assertEquals(passwordField.getAttribute("value"), password);
         assertTest.assertAll();
     }
 
@@ -60,7 +58,7 @@ public class LogInPopUp {
         assertTest.assertEquals(passwordFieldValidation.getCssValue("border-color"), "rgb(248, 65, 71)");
     }
 
-    public void registerPopUp(String firstNameValue, String lastNameValue, String phoneValue, String emailValue,String passwordValue){
+    public void registerPopUp(String firstNameValue, String lastNameValue, String phoneValue, String emailValue, String passwordValue) {
         SoftAssert assertTest = new SoftAssert();
         SelenideElement lohInButton = $(By.xpath("//*[@class='header__button ng-star-inserted']")).should(Condition.enabled);
         lohInButton.click();
@@ -76,12 +74,12 @@ public class LogInPopUp {
         phone.sendKeys(phoneValue);
         email.sendKeys(emailValue);
         password.sendKeys(passwordValue);
-        assertTest.assertEquals(firstName.getAttribute("value"),firstNameValue);
-        assertTest.assertEquals(lastName.getAttribute("value"),lastNameValue);
-        String phoneResult = "+380 "+ phoneValue;
-        assertTest.assertEquals(phone.getAttribute("value"),phoneResult);
-        assertTest.assertEquals(email.getAttribute("value"),emailValue);
-        assertTest.assertEquals(password.getAttribute("value"),passwordValue);
+        assertTest.assertEquals(firstName.getAttribute("value"), firstNameValue);
+        assertTest.assertEquals(lastName.getAttribute("value"), lastNameValue);
+        String phoneResult = "+380 " + phoneValue;
+        assertTest.assertEquals(phone.getAttribute("value"), phoneResult);
+        assertTest.assertEquals(email.getAttribute("value"), emailValue);
+        assertTest.assertEquals(password.getAttribute("value"), passwordValue);
         assertTest.assertAll();
     }
 
@@ -103,7 +101,8 @@ public class LogInPopUp {
         assertTest.assertEquals(password.getText(), "Придумайте пароль");
         assertTest.assertAll();
     }
-    public void validationOfRegisterFields(){
+
+    public void validationOfRegisterFields() {
         SoftAssert assertTest = new SoftAssert();
         SelenideElement lohInButton = $(By.xpath("//*[@class='header__button ng-star-inserted']")).should(Condition.enabled);
         lohInButton.click();
